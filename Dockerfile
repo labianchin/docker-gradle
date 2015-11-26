@@ -1,9 +1,8 @@
-FROM java:8-jdk
-MAINTAINER Nicholas Iaquinto <nickiaq@gmail.com>
+FROM java:7-jdk
 
 # Gradle
-ENV GRADLE_VERSION 2.7
-ENV GRADLE_SHA cde43b90945b5304c43ee36e58aab4cc6fb3a3d5f9bd9449bb1709a68371cb06
+ENV GRADLE_VERSION 1.12
+ENV GRADLE_SHA 8734b13a401f4311ee418173ed6ca8662d2b0a535be8ff2a43ecb1c13cd406ea
 
 RUN cd /usr/lib \
  && curl -fl https://downloads.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip -o gradle-bin.zip \
