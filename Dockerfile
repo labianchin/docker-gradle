@@ -2,8 +2,8 @@ FROM java:8-jdk
 MAINTAINER Nicholas Iaquinto <nickiaq@gmail.com>
 
 # Gradle
-ENV GRADLE_VERSION 2.7
-ENV GRADLE_SHA cde43b90945b5304c43ee36e58aab4cc6fb3a3d5f9bd9449bb1709a68371cb06
+ENV GRADLE_VERSION 2.9
+ENV GRADLE_SHA c9159ec4362284c0a38d73237e224deae6139cbde0db4f0f44e1c7691dd3de2f
 
 RUN cd /usr/lib \
  && curl -fl https://downloads.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip -o gradle-bin.zip \
